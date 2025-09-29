@@ -1,0 +1,97 @@
+.body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: white;
+}
+.sidebar {
+    position: absolute;
+    left: -10px;
+    width: 390px;
+    background-color: #35435f;
+    color: #e0e0e0;
+    height: 100vh;
+    padding: 24px 0;
+    box-sizing: border-box;
+    border-right: #35435f solid 30px;
+}
+.sidebar-header {
+    padding: 0 20px 20px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 20px;
+}
+.sidebar-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    color: white;
+}
+.dropdown {
+    margin-bottom: 10px;
+}
+.dropdown-btn {
+    width: 100%;
+    padding: 12px 20px;
+    background: none;
+    border: none;
+    color: #e0e0e0;
+    text-align: left;
+    font-size: 19px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+.dropdown-btn:hover {
+    background-color: #646491;
+}
+.dropdown-btn:after {
+    content: '▼';
+    font-size: 12px;
+    transition: transform 0.3s;
+}
+.dropdown-btn.active:after {
+    transform: rotate(-180deg);
+}
+.dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #646491;
+}
+.dropdown-content.show {
+    max-height: 500px;
+}
+.dropdown-item {
+    padding: 10px 20px 10px 30px;
+    color: #b0b0b0;
+    text-decoration: none;
+    display: block;
+    font-size: 17px;
+    transition: background-color 0.2s, color 0.2s;
+}
+.dropdown-item:hover {
+    background-color: #646491;
+    color: white;
+}
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"]:checked + .dropdown-btn + .dropdown-content {
+    max-height: 500px;
+}
+input[type="checkbox"]:checked + .dropdown-btn {
+    background-color: #646491;
+}
+input[type="checkbox"]:checked + .dropdown-btn:after {
+    transform: rotate(-180deg);
+}
+.panel {
+      display: none;
+      padding: 30px;
+      font-size: 22px;
+      background-color: #646491;
+    }

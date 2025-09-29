@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+  width: 100%;
+  max-width: 100%; /* can be limited if needed */
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #6a5050;
+}
+
+/* KEY PART */
+.scrollable-table {
+  overflow-x: auto;
+  width: 100%;
+}
+
+/* Table setup */
+table {
+  border-collapse: collapse;
+  min-width: 1000px; /* force it to overflow if content is wide */
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  white-space: nowrap; /* prevents breaking in narrow columns */
+}
+
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+  <div class="scrollable-table">
+    <table>
+      <thead>
+        <tr>
+          <th>Patient ID</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Address</th>
+          <th>Diagnosis</th>
+          <th>Notes</th>
+          <th>History</th>
+          <th>Medications</th>
+          <th>Doctor</th>
+          <th>Follow-up</th>
+          <th>dwawdasdwasdwasdwasdaw</th>
+          <th>dwawdasdwasdwasdwasdaw</th>
+          <th>dwawdasdwasdwasdwasdaw</th>
+          <th>dwawdasdwasdwasdwasdaw</th>
+
+          <!-- Add more columns if needed -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>001</td>
+          <td>Justine Bacurin</td>
+          <td>28</td>
+          <td>123 Long Address St.</td>
+          <td>Hypertension</td>
+          <td>Monitoring BP</td>
+          <td>Diabetes in family</td>
+          <td>Amlodipine 5mg daily</td>
+          <td>Dr. Reyes</td>
+          <td>2025-08-01</td>
+          <td>asdwasdawdsawdsawdsadwasdwass</td>
+          <td>asdwasdawdsawdsawdsadwasdwass</td>
+          <td>asdwasdawdsawdsawdsadwasdwass</td>
+          <td>asdwasdawdsawdsawdsadwasdwass</td>
+        </tr>
+        <!-- More rows -->
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+</body>
+</html>
