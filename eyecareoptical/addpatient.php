@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "justine";
+$database = "ralph";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
@@ -57,3 +57,4 @@ $stmt1->close();
 $stmt2->close();
 $conn->close();
 ?>
+
